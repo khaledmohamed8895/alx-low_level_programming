@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: this function print
+ * Description: using sizeof function to print the size of various types
  *
  * Return: Always 0 (success)
 */
