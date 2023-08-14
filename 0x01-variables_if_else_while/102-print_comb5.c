@@ -37,5 +37,6 @@ int main(void)
 		first_digit++;
 	}
 	putchar('\n');
+
 	return (0);
 }
