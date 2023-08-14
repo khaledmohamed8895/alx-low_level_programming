@@ -29,12 +29,12 @@ int main(void)
 				if (first_digit != 98 || second_digit != 99)
 				{
 					putchar(',');
-					putchar(',');
+					putchar(' ');
 				}
 			}
 			second_digit++;
 		}
-		first_digit;
+		first_digit++;
 	}
 	putchar('\n');
 	return (0);
