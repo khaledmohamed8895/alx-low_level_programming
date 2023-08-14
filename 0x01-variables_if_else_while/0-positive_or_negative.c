@@ -4,7 +4,7 @@
 /**
  * main - Entry poin
  *
- * Description: true or validation
+ * Description: false or true  validation
  *
  * Return: always 0
 */
