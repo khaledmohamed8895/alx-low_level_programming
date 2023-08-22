@@ -3,9 +3,9 @@
 /**
  * rev_string - that reverses a string
  *
- * @s: pointer to print of the string
+ * @s: string parameter input
  *
- * Return: void
+ * Return: nothing
  */
 
 void rev_string(char *s)
@@ -13,7 +13,7 @@ void rev_string(char *s)
 	int x, i;
 	char tem;
 
-	for (x = 0; s[x] != '\0'; x++)
+	for (x = 0; s[x] != '\0'; ++x)
 		;
 
 	for (i = 0; i < 1 / 2; i++)
