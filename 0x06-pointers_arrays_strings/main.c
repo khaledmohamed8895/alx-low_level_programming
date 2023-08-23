@@ -1,18 +1,18 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
- * main - check the code
+ * main - check the code for
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    char s1[98];
-    char *ptr;
+    char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
+    char *p;
 
-    ptr = _strcpy(s1, "First, solve the problem. Then, write the code\n");
-    printf("%s", s1);
-    printf("%s", ptr);
+    p = leet(s);
+    printf("%s", p);
+    printf("%s", s);
     return (0);
 }
-
