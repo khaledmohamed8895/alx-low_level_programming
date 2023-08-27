@@ -1,4 +1,5 @@
 #include "main.h"
+#include "stdio.h"
 
 /**
  * is_lower - determines whether ascii is lowercase
@@ -13,14 +14,14 @@ int is_lower(char c)
 
 /**
  * is_delimitetr - determines whether ascii is a delimiter
- * @c: pointer to source input.
+ * @c: charcter
  * Return: 1 if true, 0 if is false.
  */
 
 int is_delimitetr(char c)
 {
 	int i;
-	char delimiter[] = "\t\n,.!?\"()()";
+	char delimiter[] = " \t\n,.!?\"()()";
 
 	for (i = 0; i < 12; i++)
 	{
@@ -28,8 +29,8 @@ int is_delimitetr(char c)
 		{
 			return (1);
 		}
-		return (0);
 	}
+	return (0);
 }
 
 /**
