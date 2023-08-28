@@ -2,22 +2,21 @@
 
 /**
  * _memset - function that fills memory with a constant byte.
- * @s: poniter to put the constant
- * @b: constant
+ * @s: pointer
+ * @b: cosntant
  * @n: max bytes to use
- * Return: pointer s
+ * Return: pointer to s.
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	char *org_s = s;
+	unsigned int i;
 
-	while (n > 0)
+	for (i = 0; n > 0; i++, n--)
 	{
-		*s = b;
-		s++;
-		n--;
+		s[i] = b;
 	}
 
-	return (org_s);
+	return (s);
 }
+
