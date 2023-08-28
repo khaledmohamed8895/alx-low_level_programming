@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * _memset - that fills memory a block of memory with a specific value
- *
+ * _memset - fill a block of memory with a specific value
  * @s: string address of memory to be filled
  * @b: the desired value
  * @n: number of bytes to be changed
@@ -21,3 +20,4 @@ char *_memset(char *s, char b, unsigned int n)
 	}
 	return (s);
 }
+
