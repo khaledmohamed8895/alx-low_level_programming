@@ -5,7 +5,7 @@
  * main - it all starts
  * @argc: int number of arg
  * @argv: array of pointer
- * Return: 0 ;
+ * Return: always 0.
  */
 
 int main(int argc, char *argv[])
@@ -16,12 +16,8 @@ int main(int argc, char *argv[])
 	while (--argc)
 	{
 		for (c = argv[argc]; *c; c++)
-		{
 			if (*c < '0' || *c > 9)
-			{
 				return (printf("Error\n"), 1);
-			}
-		}
 		sum += atoi(argv[argc]);
 	}
 	printf("%d\n", sum);
