@@ -31,7 +31,7 @@ int **alloc_grid(int width, int height)
 				return (0);
 			}
 
-			for (j = 0; i < width; i++)
+			for (j = 0; j < width; j++)
 				tab[i][j] = 0;
 		}
 	}
