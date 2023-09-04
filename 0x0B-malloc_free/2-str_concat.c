@@ -21,7 +21,7 @@ int _strlen(char *s)
  * str_concat -  that concatenates two strings.
  * @s1: pointer of string1
  * @s2: pointer of string2
- * Return: 0;
+ * Return: pointer;
  */
 
 char *str_concat(char *s1, char *s2)
