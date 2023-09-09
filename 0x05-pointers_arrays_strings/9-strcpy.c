@@ -1,22 +1,20 @@
 #include "main.h"
 
 /**
- * _strcpy - copies the string pointed to by src
- * @dest: char type string
- * @src: char type string
- * Description: copy the string pointed to by pointer 'src' to
- * the buffer pointed to by 'dest'
- * Return: pointer to dest
+ * *_strcpy - that copies the string pointed to by src,
+ * @dest: void pointer to memory allocated with malloc(old_size).
+ * @src: size in bytes, of the allocated space for ptr
+ * Return: value of pointer of dest
  */
 
 char *_strcpy(char *dest, char *src)
 {
-	int n = -1;
+	int i;
 
-	do {
-		n++;
-		dest[n] = src[n];
-	} while (src[n] != '\0');
-
+	for (i = 0; src[i]; i++)
+	{
+		dest[i] = src[i];
+	}
 	return (dest);
 }
+
