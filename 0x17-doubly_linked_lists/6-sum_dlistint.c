@@ -5,23 +5,24 @@
  * @head: ptr to double list
  * Return: sum of nodes
  */
+
 int sum_dlistint(dlistint_t *head)
 {
-	dlistint_t *temp;
-	int sum = 0;
+	int sum;
 
-	if (head == NULL)
-		return (0);
-	else
+	sum = 0;
+
+	if (head != NULL)
 	{
-		temp = head;
+		while (head->prev != NULL)
+			head = head->prev;
 
-		while (temp)
+		while (head != NULL)
 		{
-			sum = sum + temp->n;
-			temp = temp->next;
+			sum += head->n;
+			head = head->next;
 		}
-
-		return (sum);
 	}
+
+	return (sum);
 }
